@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/skills/pm-capture/session_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
