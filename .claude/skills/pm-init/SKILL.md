@@ -86,11 +86,16 @@ This project uses the pm-* skill suite for session knowledge management:
 
 Fill each section with what you actually found — don't write placeholder text like "[framework]" into the file. If a section genuinely has nothing (e.g. no build step), omit it.
 
-### 5. Report
+### 5. Set up MCP
+
+Invoke the `/mcp-init` skill to install the memory wrapper script and regenerate `.mcp.json` and `.claude/settings.local.json` for this project.
+
+### 6. Report
 
 Tell the user:
 - What was created (list directories, confirm CLAUDE.md written/updated)
 - What to do next: "Run `/pm-capture` at the end of sessions, `/pm-compile` after a few sessions to build the index, then `/pm-query` to recall decisions."
 - If anything was skipped (e.g. knowledge/ already existed), say so
+- Remind them to **restart Claude Code** to pick up the new MCP servers
 
 Keep the report brief — one short paragraph or a small list.
