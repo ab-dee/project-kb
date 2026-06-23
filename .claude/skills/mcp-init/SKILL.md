@@ -39,7 +39,7 @@ Always overwrite with all 10 servers. Substitute real resolved values for HOME a
     "git":                 { "command": "uvx", "args": ["mcp-server-git"] },
     "filesystem":          { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "<resolved-pwd>"] },
     "memory":              { "command": "sh",  "args": ["<resolved-home>/.claude/start-memory.sh"] },
-    "time":                { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-time"] },
+    "time":                { "command": "uvx", "args": ["mcp-server-time"] },
     "context7":            { "command": "npx", "args": ["-y", "@upstash/context7-mcp"] },
     "playwright":          { "command": "npx", "args": ["@playwright/mcp@latest"] },
     "duckduckgo":          { "command": "uvx", "args": ["duckduckgo-mcp-server"] }
